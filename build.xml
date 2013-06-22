@@ -1,0 +1,8 @@
+<project name="galapagos" default="galapagos" basedir=".">
+    <target name="galapagos">
+        <javac srcdir="src" destdir="classes" classpath="ext/jcommon-0.9.0.jar:ext/jfreechart-0.9.15.jar"/>
+        <jar jarfile="lib/lightgrid.jar" basedir="classes" includes="ca/utoronto/civ/its/lightgrid/**"/>	
+        <jar jarfile="lib/galapagos.jar" basedir="classes" includes="ca/utoronto/civ/its/galapagos/**" />
+    </target>
+</project>
+
